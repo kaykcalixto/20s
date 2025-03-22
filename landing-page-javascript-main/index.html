@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>20tão</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    body{
+      font-family: 'poppins';
+      text-align:left;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <video class="video-container" autoplay loop muted>
+    <source src="voltaVideo.mp4" type="video/mp4">
+  </video>
+  <div class="header-content">
+    <br><br><br>
+    <p style="text-align:left; align-items: center;">
+      E a pessoa que eu sonhava,<br> eu vi aparecer <br><br>
+E os momentos que tivemos<br> e ainda vamos ter<br><br>
+As viagens que fizemos<br> e vamos fazer<br><br>
+Ou nos tempos mais difíceis<br> que eu te confortei<br><br>
+Se eu chorei você chegou,<br> me confortou também<br><br>
+As cervejas do começo,<br> a gente se deu bem<br><br>
+Brincadeiras com o futuro<br> e quem nós vamos ser<br><br>
+E o amor que a gente tem <br>e sempre vamos ter<br><br>
+E essa música depois<br> que a gente morrer<br><br>
+
+Volta logo, volta logo, volta
+<br><br><br>
+    </p>
+  </div>
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const video = document.querySelector(".video-container");
+
+    // Tenta reproduzir o vídeo automaticamente com som
+    video.muted = false;
+    video.play().then(() => {
+      console.log("Vídeo iniciado com som!");
+    }).catch(error => {
+      console.log("Autoplay com som bloqueado pelo navegador. O usuário precisa interagir primeiro.");
+    });
+  });
+</script>
+
+</body>
+</html>
